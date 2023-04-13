@@ -1,0 +1,253 @@
+/*Reset Style*/
+* {
+ margin: 0;
+ padding: 0; 
+}
+
+/*Global Styles*/
+
+html {
+    font-family: "Halvetica", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: normal;
+}
+
+body {
+    background-color: whitesmoke;
+    color: black;
+    opacity: 0.9;
+}
+
+/*Navigation Bar Styles*/
+.heading h1 {
+    text-align: center;
+    float: center;
+    font-size: 65px;
+    font-weight: 200;
+    font-style:inherit;
+    color: blue;
+    ;
+    
+}
+
+header {
+    height: 69px;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+    border-bottom: 1px;
+    justify-content: space-between;
+}
+
+header .navigation {
+    display: flex;
+    align-items: center;
+    padding: 1.875rem;
+  }
+  
+  header .logo {
+    flex: 1;
+    flex-flow: row;
+
+  }
+  
+  header nav .navigation {
+    display: flex;
+  }
+  
+  nav li {
+    padding-left: 3.5rem;
+  }
+
+
+.logo {
+    height: 100px;
+    margin-top: 10px;
+}
+
+.navigation {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 0;
+    list-style: none;
+}
+
+.navigation a {
+    text-decoration: underline;
+    display: block;
+    margin: 0 40px;
+    color: black;
+}
+
+.navigation a:hover {
+    opacity: 0.7;
+}
+
+@media  screen and (max-width: 700px) { 
+    .navigation {
+        flex-flow: column wrap;
+        padding: 0;
+    }
+
+    .navigation a {
+        text-align: center;
+        padding: 10px;
+    }
+
+    header {
+        height: auto;
+    }
+}
+
+/* Mission Section Styles */
+
+.mission-container {
+    display: flex;
+    position: relative;
+    top :70px;
+    height: 700px;
+    width: 1200px;
+    background-image: url(../New\ Img2/banner-landingpage);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    margin: auto;
+}
+
+@media screen and (max-width: 1200px) {
+    .mission-container {
+        width: auto;
+    }
+    
+    .mission-container h2, h4 {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .mission-container {
+        top: 138px;
+    }
+    
+}
+
+.mission-container h2 {
+    background-color: whitesmoke;
+    width: 1200px;
+    text-align: center;
+    padding: 20px 0 5px 0;
+}
+
+.mission-container h4 {
+    background-color: whitesmoke;
+    width: 1200px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.mission-statement-container {
+    flex-shrink: 2;
+}
+
+/* Book Portfolio section styles */
+
+.featured-container {
+    width: 1000px;
+    margin: 150px auto 90px auto;
+    position: relative;
+}
+
+.featured-statement {
+    text-align: center;
+    margin: 20px;
+}
+
+.featured-statement h4 {
+    margin: 20px 0;
+}
+
+.flexbox-center {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-container {
+    display: block;
+}
+
+.img-container img {
+    height: 200px;
+    width: 300px;
+    flex-basis: auto;
+    margin: 10px;
+}
+
+figcaption {
+    text-align: center;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+/* Teams Section Styles */
+
+.team-container {
+    width: 1200px;
+    height: 700px;
+    top: 40px;
+    margin: auto;
+    padding: 0;
+    background-image:  url(../New\ Img2/photography-logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.team-statement {
+    text-align: center;
+}
+
+.person-container {
+    width: 300px;
+    height: 250px;
+    margin: 30px 40px;
+    text-align: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* Contact Section Styles */
+
+.contact-container {
+    text-align: center;
+    height: 200px;
+    width: auto;
+}
+
+.contact-container h2 {
+    margin-top: 30px;
+}
+
+.contact-container h5, .contact-container h4 {
+    margin: 35px;
+}
+
+/* Footer Styles */
+
+footer h5 {
+    text-align: center;
+    margin: 20px;
+    float: center;
+}
+footer {
+    background-color: brown;
+    width: auto;
+}
